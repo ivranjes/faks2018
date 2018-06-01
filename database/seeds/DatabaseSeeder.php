@@ -2,15 +2,17 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class ZupanijasTableSeeder extends Seeder
 {
     /**
      * Seed the application's database.
      *
      * @return void
      */
-    public function run()
+    public function down()
     {
         // $this->call(UsersTableSeeder::class);
+        $this->call (ZupanijasTableSeeder::class);
+         $this->call (MjestosTableSeeder::class);
     }
 }

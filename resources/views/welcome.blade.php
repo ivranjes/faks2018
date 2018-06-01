@@ -67,7 +67,7 @@
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-            <div class="top-left links">
+            <div class="top-right links">
                 @auth
                 <a href="{{ url('/home') }}">Home</a>
                 @else
@@ -95,7 +95,26 @@
                 <a href="https://laravel-news.com">News</a>
                 <a href="https://forge.laravel.com">Forge</a>
                 <a href="https://github.com/laravel/laravel">GitHub</a>
-                <a href="https://www.index.hr">Index</a>
+                <hr>
+                <hr>
+                <html>
+<head>
+<style>
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 10px;
+} 
+</style>
+</head>
+                </html>
+                <a href="https://www.index.hr">Zolota kralj</a>
+                <hr>
+                <a href="https://www.tportal.hr">The end&koniec</a>
             </div>
 
         </div>
